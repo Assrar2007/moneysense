@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; background: #070B14; }
+body { background: #070B14; color: #F1F5F9; font-family: var(--font-inter), sans-serif; overflow-x: hidden; }
+::selection { background: #059669; color: #FFFFFF; }
+:focus-visible { outline: 2px solid #10B981; outline-offset: 3px; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { scrollbar-width: none; }
+section[id] { scroll-margin-top: 5rem; }
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #070B14; }
+::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+@media print {
+  body { background: white !important; color: black !important; }
+  body * { visibility: hidden !important; }
+  #money-plan, #money-plan * { visibility: visible !important; color: black !important; }
+  #money-plan { position: absolute; inset: 0 auto auto 0; width: 100%; border: 1px solid #ccc !important; box-shadow: none !important; background: white !important; }
+  #money-plan .print\:hidden { display: none !important; }
+}
