@@ -60,7 +60,7 @@ Rates in Grow and Decide are editable assumptions. Growth math compounds monthly
 ## AI Tools Used
 
 - ChatGPT Codex: design direction, implementation, code review and build/browser QA
-- Other tools used by the team: **[FILL IN, if any]**
+- Other tools used by the team: **Antigravity**
 
 ## Important Prompts Used
 
