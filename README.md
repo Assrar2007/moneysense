@@ -4,8 +4,8 @@
 
 ## Team Members
 
-- Team name: **[FILL IN]**
-- Members and roles: **[FILL IN]**
+- Team name: **Moggerz**
+- Members: **Assrar & Yusuf**
 
 ## Project Description
 
